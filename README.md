@@ -79,3 +79,37 @@ case default
 end select
 ```
 
+
+## Subrotinas e Funções
+
+Subrotinas e funções são definidas com uma sintaxe específica e podem ser chamadas de outras partes do programa.
+
+* Subrotina:
+```fortran
+subroutine minhaSubrotina(arg1, arg2)
+    integer, intent(in) :: arg1
+    integer, intent(out) :: arg2
+    ! corpo da subrotina
+end subrotine minhaSubrotina
+```
+
+* Função
+```fortran
+function minhaFuncao(arg1) result(resultado)
+    integer, intent(in) :: arg1
+    integer :: resultado
+    ! corpo da funcao
+end function minhaFuncao
+```
+
+## Módulos
+Módulos em Fortran são usados para encapsular variáveis, subrotinas, funções, e definições de tipos, facilitando a reutilização de código.
+
+```fortran
+module meuModulo
+    implicit none
+    ! declarações
+contains
+    ! subrotinas e funcoes
+end module meuModulo
+```
