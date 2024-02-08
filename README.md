@@ -5,6 +5,13 @@ repository for testing and studying the Fortran language.
 
 Fortran é uma linguagem de programação de alto nível que é particularmente forte em áreas como computação científica, engenharia, e matemática aplicada. Originada na década de 1950, Fortran (um acrônimo para "Formula Translation") foi a primeira linguagem de programação de alto nível amplamente usada, projetada para permitir a fácil tradução de fórmulas matemáticas para código de computador.
 
+### Características Principais:
+
+* Orientada a cálculos númericos e científicos: Fortran foi desenolvida com o objetivo de suportar computação numérica complexa, incluindo operações de álgebra linear, processamento de matrizes e manipulação de arrays multidimensionais. Suas capacidades robustas para essas tarefas a tornam uma escolha popular em campos que requerem extensos cálculos numéricos, como física, química, meteorologia e engenharia.
+
+* Eficiência: 
+
+
 ### Classificação:
 
 Dado seu projeto e uso predominante, Fortran é classificada como uma linguagem de programação:
@@ -112,4 +119,24 @@ module meuModulo
 contains
     ! subrotinas e funcoes
 end module meuModulo
+```
+
+## Comentários
+
+Comentários são iniciados com um `!`e podem ser colocados em quase qualquer lugar no código.
+
+```fortran
+! Isto é um comentário
+```
+
+## Características modernas
+
+Fortran moderno suporta programação orientada a objetos, incluindo a definição de tipos personalizados (ánalogos a classes em outras linguagens), herança, polimorfismo e encapsulamento.
+
+```fortran
+type :: Meu tipo
+    ! membros do tipo
+contains
+    procedure :: minhaFuncao ! método do tipo
+end type MeuTipo
 ```
