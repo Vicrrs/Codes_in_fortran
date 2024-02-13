@@ -140,3 +140,101 @@ contains
     procedure :: minhaFuncao ! método do tipo
 end type MeuTipo
 ```
+
+## Tipos de dados inerentes
+
+Fortran possui vários tipos de dados inerentes que são essenciais para diversas aplicações científicas e de engenharia:
+
+* Integer: Para números inteiros.
+* Real: Para números de pontos flutuantes.
+* Complex: Para números complexos.
+* Character: Para strings de caracteres.
+* Logical: Para valores booleanos (`True` ou `False`).
+
+
+## Estrutura de Dados Avançadas
+
+Além dos tipos básicos, Fortran permite a definição de estruturas de dados complexos.
+
+* Arrays: Fortran é conhecido por seu poderoso suporte a arrays, permitindo operações complexas de álgebra linear de forma direta.
+
+```fortran
+real, dimension(10) :: vetor
+real, dimension(10,10) :: matriz
+```
+
+* Derived Types (Tipos derivados): Similar a structs em C ou classes em outras linguagens, permitindo agrupar diferentes tipos de dados.
+
+```fortran
+type :: Pessoa
+    character(len=50) :: nome
+    integer :: idade
+end type Pessoa
+```
+
+## Operadores e Expressões
+
+Fortran suporta os operadores aritméticos (+, -, *, /), operadores relacionais (==, /=, <, <=, >, >=) e operadores lógicos (.and., .or., .not.). As expressões seguem a precedência padrão de operadores, que pode ser alterada usando parênteses.
+
+## Atribuições e Operações com Arrays
+
+Um dos pontos fortes do Fortran é a manipulação de arrays, incluindo a atribuição e operações de matriz inteira, que permitem operações compactas e eficientes:
+
+```fortran
+matriz = 0.0 ! Atribui 0 a todos os elementos da matriz
+vetor = [1, 2, 3, 4, 5]
+matriz(1,:) = vetor ! Atribui vetor à primeira linha de matriz
+```
+
+## IO (Entrada e Saída)
+
+Fortran oferece comandos para leitura e escrita de dados, tanto em arquivos como na entrada/saída padrão:
+
+* Leitura e Escrita na Tela:
+
+```fortran
+print *, "Informe um número:"
+read *, numero
+```
+
+* Leitura e Escrita em Arquivos:
+
+```fortran
+open(unit=10, file='dados.txt', status='old', action='read')
+read(10, *) valor
+close(10)
+```
+
+## Controle de Fluxo avançado.
+
+* Ciclos e Loops com do: Fortran permite loops com contadores, além de loops baseados em condições.
+
+```fortran
+do i = 1, n, 2 ! Loop de 1 a n com passo de 2
+    ! código
+end do
+```
+
+* Loop Infinito e Saída com `exit`:
+
+```fortran
+do
+    if (condicao) exit
+end do
+```
+
+## Programação Orientada a Objetos
+
+Fortran suporta conceitos de OOP desde a versão 2003, incluindo:
+
+* Tipos Derivados com Extensão (Herança):
+
+```fortran
+type, extends(Pessoa) :: Empregado
+    integer :: id
+end type Empregado
+```
+
+* Polimorfismo e Interfaces: Permitindo a definição de comportamentos abstratos que podem ser implementados por tipos derivados.
+
+* Encapsulamento e Módulos: Os módulos fornecem um meio de encapsular dados e funcionalidades, promovendo a reutilização e a organização do código.
