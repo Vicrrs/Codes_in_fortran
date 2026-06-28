@@ -87,4 +87,32 @@ Para dois corpos, a temperatura final de quelíbrio pode ser calculada por:
 Tf = (m1.c1.T1 + m2.c2.T2) / (m1.c1 + m2.c2)
 ```
 
+## 4. Gás ideal
+
+A equação para o gás ideal é:
+
+```
+PV = nRT
+```
+
+Onde:
+```
+P = pressão
+V = volume
+n = número de mols
+R = constante dos gases
+T = temperatura absoluta em Kelvin
+```
+
+Se quisermos calcular a pressão:
+
+```
+P = nRT / V
+```
+
+A constante dos gases é:
+
+```
+R = 8,314 J/ (mol K)
+```
 
