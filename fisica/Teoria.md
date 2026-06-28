@@ -205,4 +205,27 @@ v_novo = v_antigo + a.dt
 x_novo = x_antigo + v_novo.dt
 ```
 
+## 8. Decaimento exponencial
+
+Muitos fenomenos físicos seguem uma equação diferencial do tipo:
+
+```
+dN/dt = -lambda N
+```
+
+Isso aparece em:
+
+```
+decaimento radioativo
+decaimento de capacitor
+resfriamento aproximado
+populações simples
+```
+
+A solução analítica é:
+
+```
+N(t) = N0.e^(-lambda.t)
+```
+
 
