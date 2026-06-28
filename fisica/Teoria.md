@@ -116,3 +116,23 @@ A constante dos gases é:
 R = 8,314 J/ (mol K)
 ```
 
+## 5. Lei de Coulomb
+
+A força elétrica entre duas cargas puntiformes é dada pela lei de coulomb:
+
+```
+F = k.|q1.q2| / r²
+```
+
+Onde:
+
+```
+F = força elétrica
+k = 8,99 × 10⁹ N m²/C²
+q1 e q2 = cargas elétricas
+r = distância entre as cargas
+```
+
+Se as cargas têm o mesmo sinal, a força e repulsiva.
+Se têm sinais opostos, a força é atrativa.
+
