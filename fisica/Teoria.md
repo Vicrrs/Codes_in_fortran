@@ -58,5 +58,33 @@ O tempo total de voo é:
 T = 2vy / g
 ```
 
+## 3. Calorimetria
+
+Em calorimetria, usamos:
+
+```
+Q = m.c.ΔT
+```
+
+Onde:
+
+```
+Q = quantidade de calor
+m = massa
+c = calor específico
+ΔT = variação de temperatura
+```
+
+Se misturaos dois corpos sem perda de calos para o ambiente, temos:
+
+```
+calor perdido + calor recebido = 0
+```
+
+Para dois corpos, a temperatura final de quelíbrio pode ser calculada por:
+
+```
+Tf = (m1.c1.T1 + m2.c2.T2) / (m1.c1 + m2.c2)
+```
 
 
