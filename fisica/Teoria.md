@@ -136,3 +136,24 @@ r = distância entre as cargas
 Se as cargas têm o mesmo sinal, a força e repulsiva.
 Se têm sinais opostos, a força é atrativa.
 
+## 6. Campo elétrico de uma carga
+
+O campo elétrico gerado por uma carga puntiforme é:
+
+```
+E = k |q| / r²  (N/C)
+```
+
+Onde:
+
+```
+E = campo elétrico
+q = carga fonte
+r = distância até a carga
+k = constante eletrostática
+```
+
+
+
+
+
