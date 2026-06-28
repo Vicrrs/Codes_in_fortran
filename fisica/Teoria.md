@@ -153,7 +153,56 @@ r = distância até a carga
 k = constante eletrostática
 ```
 
+## 7. Oscilador harmônico simples
 
+O oscilador harmônico simples aparece em sistemas como massa-mola.
+A força elática é dada por:
 
+```
+F = -k.x
+```
+
+Pela segunda lei de Newton:
+
+```
+F = m.a
+```
+
+Então:
+
+```
+ma = -kx
+
+\(\therefore \)
+
+a = -(k/m)x
+```
+
+Definimos:
+
+```
+omega² = k/m
+```
+
+Então a equação diferencial é:
+
+```
+d²x/dt² + omega² x = 0
+```
+
+A solução analítica é:
+
+```
+x(t) = A.cos(omega t + phi)
+```
+
+Mas também podemos resolver numericamente.
+
+Usaremos ummétodo simples chamdo Euler-Cromer:
+
+```
+v_novo = v_antigo + a.dt
+x_novo = x_antigo + v_novo.dt
+```
 
 
