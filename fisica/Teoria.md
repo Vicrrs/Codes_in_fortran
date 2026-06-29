@@ -228,4 +228,63 @@ A solução analítica é:
 N(t) = N0.e^(-lambda.t)
 ```
 
+## 9. Derivada numérica
+
+A derivada mede a taxa de variação de uma função.
+
+A definição é:
+
+```
+f'(x) = limite quando h->0 de [f(x+h) - f(x)] / h
+```
+
+Mas numericamente usamos a aproximação. Uma aproximação melhor é a diferença central:
+
+```
+f'(x) ≈ [f(x+h) - f(x-h)] / 2h
+```
+
+## 10. Integral pelo método dos trapézios
+
+A integral apresenta uma área acumulada.
+
+Queremos calcumar:
+
+```
+∫ f(x) dx
+```
+
+Numericamente, podemos dividir o intervalo ```[a,b]``` em varios pedacos pequenos.
+
+No métodos dos trapézios:
+
+```
+Integral ≈ h [ (f(a) + f(b))/2 + soma dos pontos internos ]
+```
+
+Onde:
+
+```
+h = (b - a) / n
+```
+
+## 11. Velocidade e posição por integração numerica
+
+Se conhecemos a aceleração, podemos obter a velocidade:
+
+```
+v = v0 + a t
+```
+
+Mas numericamente podemos fazer:
+
+```
+v_novo = v_antigo + a dt
+```
+
+E a posição:
+
+```
+x_novo = x_antigo + v dt
+```
 
