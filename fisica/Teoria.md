@@ -414,3 +414,29 @@ A ideia física é: em equilíbrio, o valor em cada ponto é a média dos pontos
 
 
 # 15. Equação de Schrödinger independente do tempo em uma caixa 1D
+
+Para uma partícula em uma caixa unidimensional de comprimento L, as soluções são:
+
+```
+psi_n(x) = sqrt(2/L) sen(n pi x / L)
+```
+
+A energia é:
+
+```
+E_n = n² pi² hbar² / 2mL²
+```
+
+Para simplificar, vamos usar unidades naturais:
+
+```
+hbar = 1
+m = 1
+L = 1
+```
+
+Então:
+
+```
+E_n = n² pi² / 2
+```
