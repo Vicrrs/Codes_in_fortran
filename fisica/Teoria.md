@@ -288,3 +288,65 @@ E a posição:
 x_novo = x_antigo + v dt
 ```
 
+## 12. Pendulo simples nao linear
+
+O pendulo simples é um sistema clássico de Física matemática.
+
+Para pequenos angulos usamos:
+
+```
+sen(theta) ≈ theta
+```
+
+Mas a equação mais correta é a não linear:
+
+```
+d²theta/dt² = -(g/L) sen(theta)
+```
+
+Onde:
+
+```
+theta = ângulo do pêndulo
+g = gravidade
+L = comprimento do fio
+```
+
+Para resolver numericamente, transformamos a equação de segunda ordem em duas de primeira ordem.
+
+Definimos:
+
+```
+omega = dtheta/dt
+```
+
+Então:
+
+```
+dtheta/dt = omega
+domega/dt = -(g/L) sen(theta)
+```
+
+Usaremos o método de Euler-Cromer:
+
+```
+omega_novo = omega_antigo + aceleracao_angular * dt
+theta_novo = theta_antigo + omega_novo * dt
+```
+
+## 13. Série de Fourier de uma onda quadrada
+
+Séries de Fourier servem para representar funções complicadas como soma de senos e cossenos.
+
+Uma onda quadrada pode ser aproximada por:
+
+```
+f(x) = 4/pi * [sen(x) + sen(3x)/3 + sen(5x)/5 + sen(7x)/7 + ...]
+```
+
+ou seja:
+
+```
+f(x) = 4/pi * soma de sen((2k - 1)x)/(2k - 1)
+```
+
