@@ -395,3 +395,22 @@ onde:
 r = alfa dt / dx²
 ```
 
+
+# 14. Equação de Laplace em duas dimensões
+
+A equação de Laplace aparece em muitos problemas
+
+```
+∇²V = 0
+```
+
+Em duas dimensões:
+
+```
+∂²V/∂x² + ∂²V/∂y² = 0
+```
+
+A ideia física é: em equilíbrio, o valor em cada ponto é a média dos pontos vizinhos.
+
+
+# 15. Equação de Schrödinger independente do tempo em uma caixa 1D
