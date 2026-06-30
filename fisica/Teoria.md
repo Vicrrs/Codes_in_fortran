@@ -350,3 +350,48 @@ ou seja:
 f(x) = 4/pi * soma de sen((2k - 1)x)/(2k - 1)
 ```
 
+
+## 13. Equação do calor em uma dimensao
+
+A equação do calor é uma das equações diferenciais parciais mais importantes da Física!
+
+```
+∂T/∂t = alfa ∂²T/∂x²
+```
+
+Onde:
+
+```
+T = temperatura
+t = tempo
+x = posição
+alfa = difusividade térmica
+```
+
+Ela descreve como o calor se espalha em uma barra.
+
+Vamos imaginar uma barra de comprimento L.
+
+As extremidades ficam fixas em temperatura zero.
+
+```
+T(0) = 0
+T(L) = 0
+```
+
+No início, colocamos uma região quente no centro da barra.
+
+Método numérico:
+
+A discretização usada é:
+
+```
+T_i_novo = T_i + r (T_{i+1} - 2T_i + T_{i-1})
+```
+
+onde:
+
+```
+r = alfa dt / dx²
+```
+
